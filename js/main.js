@@ -50,9 +50,15 @@
     loc = 0;
   }
    const words = [
-    'red',
-    'blue',
-    'pink'
+    'kyoukai',
+    'ouki',
+    'shin',
+    'youtanwa',
+    'kanki',
+    'tou',
+    'eisei',
+    'syouheikun',
+    'bajiou',
   ]
   let word;
   let loc = 0;
@@ -68,7 +74,7 @@
     startTime = Date.now();
     setWord();
   });
-  
+
   document.addEventListener('keydown', k => {
     if (k.key !== word[loc]) {
       return;
