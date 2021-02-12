@@ -30,5 +30,8 @@ body {
 .target-wrapper #target span {
   font-size: 20px;
 }
+.target-wrapper #result {
+  font-size: 26px;
+}
 
 /*# sourceMappingURL=main.css.map */

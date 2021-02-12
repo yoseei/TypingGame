@@ -22,7 +22,6 @@ body {
   // opacity: .5;
   padding: 50px;
   width: 50%;
-
   #target {
     font-size: 3em;
     letter-spacing: 5px;
@@ -30,5 +29,8 @@ body {
     span {
       font-size: 20px;
     }
+  }
+  #result {
+    font-size: 26px;
   }
 }

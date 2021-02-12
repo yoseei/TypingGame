@@ -65,6 +65,9 @@
   let startTime;
   let isPlaying = false;
   const target = document.getElementById('target');
+  const message = [
+    `まだまだですね！`
+  ]
  
   document.addEventListener('click', () => {
     if (isPlaying === true) {
@@ -86,8 +89,15 @@
       if (words.length === 0) {
         const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
         const result = document.getElementById('result');
-        result.textContent = `Finished! ${elapsedTime} seconds!`;
-        return;
+        if (elapsedTime <= 13) {
+          result.textContent = `${elapsedTime} 秒！
+          君が天下の大将軍だ！！`;
+        } else if (elapsedTime <= 15) {
+          result.textContent = `${elapsedTime}秒！\n1000人将に任命だ！！`;
+        } else {
+          result.textContent = `${elapsedTime}秒！\n歩兵から出直して来い！`
+          return;
+        }
       }
       setWord();
     }
