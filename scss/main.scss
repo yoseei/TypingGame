@@ -16,6 +16,10 @@ body {
     padding: 10px 30px;
     box-sizing: border-box;
     align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+    }
     ul {
       display: flex;
       margin: 0;
