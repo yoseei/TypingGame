@@ -1,13 +1,13 @@
 'use strict';
 
 {
-  
   function setWord() {
     word = words.splice(Math.floor(Math.random() * words.length), 1)[0];
     target.textContent = word;
     loc = 0;
   }
-   const words = [
+  
+  const words = [
     'kyoukai',
     'ouki',
     'shin',
@@ -26,6 +26,7 @@
   const message = [
     `まだまだですね！`
   ]
+  
  
   document.addEventListener('click', () => {
     if (isPlaying === true) {
@@ -51,13 +52,14 @@
         reload.textContent = 'Try Again! Please Refresh This Page!'
 
         if (elapsedTime <= 13) {
-          result.textContent = `${elapsedTime} 秒！\n君が天下の大将軍だ！！`;
+          result.textContent = `${elapsedTime} 秒！\n 君が天下の大将軍だ！！`;
+          console.log('');
           `${reload}`;
         } else if (elapsedTime <= 15) {
-          result.textContent = `${elapsedTime}秒！\n1000人将に任命だ！！`;
+          result.textContent = `${elapsedTime}秒！\n 1000人将に任命だ！！`;
           `${reload}`;
         } else {
-          result.textContent = `${elapsedTime}秒！\n歩兵から出直して来い！`
+          result.textContent = `${elapsedTime}秒！\n 歩兵から出直して来い！`
           `${reload}`;
           return;
         }

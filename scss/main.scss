@@ -1,36 +1,62 @@
-
+h1 {
+  margin: 0;
+}
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   align-items: center;
-}
-.wrapper {
-  background-image: url(../img/kingdom.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.target-wrapper {
-  text-align: center;
-  background-color: rgba(255, 255, 255, .8);
-  // opacity: .5;
-  padding: 50px;
-  width: 50%;
-  #target {
-    font-size: 3em;
-    letter-spacing: 5px;
-    font-weight: 400;
-    span {
-      font-size: 20px;
+  #header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: #ecedf0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    align-items: center;
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      gap: 20px;
     }
   }
-  #result {
-    font-size: 26px;
+  .wrapper {
+    background-image: url(../img/kingdom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .target-wrapper {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    // opacity: .5;
+    padding: 50px;
+    width: 50%;
+    #target {
+      font-size: 3em;
+      letter-spacing: 5px;
+      font-weight: 400;
+      span {
+        font-size: 20px;
+      }
+    }
+    #result {
+      font-size: 26px;
+    }
+  }
+  #footer {
+     width: 100%;
+    height: 100px;
+    background-color: black;
   }
 }
+  

@@ -1,18 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Typing Game</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <p id="target">Click to start!</p>
-  <p id="result"></p>
-  <script src="js/main.js"></script>
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TypingDam</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-  
+  <div id="header">
+    <h1>TypingDam</h1>
+    <ul>
+      <li>ログイン</li>
+      <li>新規登録</li>
+    </ul>
+  </div>
+
+  <script type="text/babel">
+    (() => {
+      ReactDOM.render(
+        
+        document.getElementById('header')
+      )
+    })();
+  </script>
   <div class="wrapper">
     <div class="target-wrapper">
       <p id="target">天下の大将軍になる！<br><span>Click to Start!</span></p>
@@ -32,6 +37,15 @@
       <p id="reload"></p>
     </div>
   </div>
-  <script src="js/main.js"></script>
+
+  <script src="./js/main.js"></script>
+  <div id="footer">©2021 Y.K</div>
+  <script type="text/babel">
+    (() => {
+      ReactDOM.render(
+        document.getElementById('footer'),
+      );
+    })();
+  </script>
 </body>
 </html>

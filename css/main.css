@@ -1,11 +1,32 @@
+h1 {
+  margin: 0;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   align-items: center;
 }
-
-.wrapper {
+body #header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: #ecedf0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  align-items: center;
+}
+body #header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+body .wrapper {
   background-image: url(../img/kingdom.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,23 +36,27 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.target-wrapper {
+body .target-wrapper {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 50px;
   width: 50%;
 }
-.target-wrapper #target {
+body .target-wrapper #target {
   font-size: 3em;
   letter-spacing: 5px;
   font-weight: 400;
 }
-.target-wrapper #target span {
+body .target-wrapper #target span {
   font-size: 20px;
 }
-.target-wrapper #result {
+body .target-wrapper #result {
   font-size: 26px;
+}
+body #footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
