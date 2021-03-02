@@ -1,6 +1,12 @@
 'use strict';
 
 {
+  const stalker = document.getElementById('stalker'); 
+
+  //上記のdivタグをマウスに追従させる処理
+  document.addEventListener('mousemove', function (e) {
+    stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+  });
   function setWord() {
     word = words.splice(Math.floor(Math.random() * words.length), 1)[0];
     target.textContent = word;
