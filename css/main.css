@@ -47,8 +47,13 @@ body .target-wrapper #target {
   letter-spacing: 5px;
   font-weight: 400;
 }
-body .target-wrapper #target span {
+body .target-wrapper #target #clickHere {
   font-size: 20px;
+  transition: all .3s ease;
+}
+body .target-wrapper #target #clickHere:hover {
+  font-size: 26px;
+  color: #f21818;
 }
 body .target-wrapper #result {
   font-size: 26px;

@@ -6,7 +6,7 @@
     target.textContent = word;
     loc = 0;
   }
-  
+
   const words = [
     'kyoukai',
     'ouki',
@@ -27,8 +27,8 @@
     `まだまだですね！`
   ]
   
- 
-  document.addEventListener('click', () => {
+  const clickHere = document.getElementById('clickHere');
+  clickHere.addEventListener('click', () => {
     if (isPlaying === true) {
       return;
     }
