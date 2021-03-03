@@ -1,28 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TypingDam</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypingDam</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body>
-  <div id="header">
-    <h1><a href="#">TypingDam</a></h1>
-    <ul>
-      <li><a href="#">ログイン</a></li>
-      <li><a href="#">新規登録</a></li>
-    </ul>
-  </div>
+  </head>
+  <body>
+    <div id="header">
+      <h1><a href="#">TypingDam</a></h1>
+      <ul>
+        <li><a href="#">ログイン</a></li>
+        <li><a href="#">新規登録</a></li>
+      </ul>
+    </div>
 
-  <!-- <script type="text/babel">
+    <!-- <script type="text/babel">
     (() => {
       ReactDOM.render(
         
@@ -30,16 +29,20 @@
       )
     })();
   </script> -->
-  <div class="wrapper">
-    <div class="target-wrapper">
-      <p id="target">天下の大将軍になる！<br><span id="clickHere">Click Here to Start!</span></p>
-      <p id="result"></p>
-      <p id="reload"></p>
+    <div class="wrapper">
+      <div class="target-wrapper">
+        <p id="target">
+          天下の大将軍になる！<br /><span id="clickHere"
+            >Click Here to Start!</span
+          >
+        </p>
+        <p id="result"></p>
+        <p id="reload"></p>
+      </div>
     </div>
-  </div>
 
-  <div id="footer">©2021 Y.K</div>
-  <!-- <script type="text/babel">
+    <div id="footer">©2021 Y.K</div>
+    <!-- <script type="text/babel">
     (() => {
       ReactDOM.render(
         document.getElementById('footer'),
@@ -48,5 +51,5 @@
     </script> -->
     <div id="stalker"></div>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
