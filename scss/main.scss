@@ -38,10 +38,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   .target-wrapper {
     text-align: center;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, 0.8);
     // opacity: .5;
     padding: 50px;
     width: 50%;
@@ -51,7 +51,7 @@ body {
       font-weight: 400;
       #clickHere {
         font-size: 20px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         &:hover {
           font-size: 26px;
           color: rgb(242, 24, 24);
@@ -73,13 +73,14 @@ body {
   #stalker {
     pointer-events: none;
     position: fixed;
-    top: -8px;     //座標調節（カーソル位置と円の中心を合わせる）
-    left: -8px;    //座標調節（カーソル位置と円の中心を合わせる）
-    width: 16px;   //マウスストーカーの直径
-    height: 16px;  //マウスストーカーの直径
+    top: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    left: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    width: 16px; //マウスストーカーの直径
+    height: 16px; //マウスストーカーの直径
     background: rgba(252, 252, 18, 0.867);
     border-radius: 50%;
-    transition: transform .2s, top .5s, left .5s, width .5s, height .5s, background-color .5s;
+    transition: transform 0.2s, top 0.5s, left 0.5s, width 0.5s, height 0.5s,
+      background-color 0.5s;
     transition-timing-function: ease-out;
     z-index: 999;
     &.hov_ {
@@ -87,7 +88,7 @@ body {
       left: -32px;
       width: 64px;
       height: 64px;
-      transition: .5s;
+      transition: 0.5s;
       background: rgba(242, 138, 10, 0.79);
     }
   }
@@ -98,16 +99,18 @@ body {
 /* fontawesome */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 [class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+  font-family: "FontAwesome", sans-serif;
 }
 
-.login-body {
+.login-body,
+.new-body {
   display: flex;
   flex-direction: column;
   background: #e9e9e9;
   color: #5e5e5e;
-  font: 400 87.5%/1.5em 'Open Sans', sans-serif;
-  .login-wrapper {
+  font: 400 87.5%/1.5em "Open Sans", sans-serif;
+  .login-wrapper,
+  .new-wrapper {
     flex: 1;
     .form-wrapper {
       background: #fafafa;
@@ -122,13 +125,13 @@ body {
         padding: 0 1.5em;
         .form-item {
           margin-bottom: 0.75em;
-          width: 100%;  
+          width: 100%;
           input {
             background: #fafafa;
             border: none;
             border-bottom: 2px solid #e9e9e9;
             color: #666;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 1em;
             height: 50px;
             transition: border-color 0.3s;
@@ -148,7 +151,7 @@ body {
             color: #fff;
             cursor: pointer;
             height: 50px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 1.2em;
             letter-spacing: 0.05em;
             text-align: center;

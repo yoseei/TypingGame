@@ -73,8 +73,8 @@
 
   document.addEventListener('keydown', k => {
     if (k.key !== word[loc]) {
-      console.log(k.key);
-      console.log(word[loc]);
+      console.log("k::", k.key);
+      console.log("word::", word);
 
       return;
     }
