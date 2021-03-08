@@ -1,3 +1,9 @@
+// マウスカーソルを消す
+html,body,a,input,button,alert{
+  cursor: none;
+}
+
+// 本体
 h1 {
   margin: 0;
 }
@@ -9,7 +15,7 @@ body {
   #header {
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: #000000d7;
     color: #ecedf0;
     display: flex;
     justify-content: space-between;
@@ -65,7 +71,7 @@ body {
   #footer {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: #000000d7;
     color: white;
     text-align: center;
     line-height: 50px;
@@ -77,10 +83,10 @@ body {
     left: -8px; //座標調節（カーソル位置と円の中心を合わせる）
     width: 16px; //マウスストーカーの直径
     height: 16px; //マウスストーカーの直径
-    background: rgba(252, 252, 18, 0.867);
+    background: rgba(252, 252, 18, 0.7);
     border-radius: 50%;
     transition: transform 0.2s, top 0.5s, left 0.5s, width 0.5s, height 0.5s,
-      background-color 0.5s;
+    background-color 0.5s;
     transition-timing-function: ease-out;
     z-index: 999;
     &.hov_ {
@@ -91,6 +97,19 @@ body {
       transition: 0.5s;
       background: rgba(242, 138, 10, 0.79);
     }
+  }
+  #cursor{
+    transform: translate(0,0);
+    pointer-events: none;
+    position: fixed;
+    top: -4px;    //座標調節（カーソル位置と円の中心を合わせる）
+    left: -4px;   //座標調節（カーソル位置と円の中心を合わせる）
+    width: 8px;   //カーソルの直径
+    height: 8px;  //カーソルの直径
+    background: rgba(0,0,0,0.75);
+    border-radius: 50%;
+    z-index: 999;
+    transition: width .3s, height .3s, top .3s, left .3s;
   }
 }
 
@@ -144,7 +163,6 @@ body {
       border-radius: 5px;
       border: none;
       color: #fff;
-      cursor: pointer;
       height: 50px;
       font-family: "Open Sans", sans-serif;
       font-size: 1.2em;
@@ -176,21 +194,21 @@ body {
     }
   }
 }
-.form-footer {
-  font-size: 1em;
-  padding: 2em 0;
-  text-align: center;
-  .form-footer a {
-    color: #8c8c8c;
-    text-decoration: none;
-    transition: border-color 0.3s;
-    &:hover {
-      :hover {
-        border-bottom: 1px dotted #8c8c8c;
-      }
-    }
-  }
-}
+// .form-footer {
+//   font-size: 1em;
+//   padding: 2em 0;
+//   text-align: center;
+//   .form-footer a {
+//     color: #8c8c8c;
+//     text-decoration: none;
+//     transition: border-color 0.3s;
+//     &:hover {
+//       :hover {
+//         border-bottom: 1px dotted #8c8c8c;
+//       }
+//     }
+//   }
+// }
 
 
 
