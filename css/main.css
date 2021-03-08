@@ -23,6 +23,10 @@ body #header {
   box-sizing: border-box;
   align-items: center;
 }
+body #header #userId {
+  margin-right: auto;
+  margin-left: 20px;
+}
 body #header a {
   color: white;
   text-decoration: none;

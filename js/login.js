@@ -49,3 +49,11 @@ auth.onAuthStateChanged(function(user) {
   }
 });
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    const userId = document.getElementById('userId');
+    userId.textContent = "ID: " + user.email;
+  } else {
+    userId.textContent = "";
+  }
+});
