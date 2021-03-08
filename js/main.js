@@ -12,7 +12,6 @@
   
   // stalker
   const stalker = document.getElementById('stalker'); 
-
   let hovFlag = false;
 
   document.addEventListener('mousemove', function (e) {
@@ -21,7 +20,7 @@
     }
   });
 
-  const linkElem = document.querySelectorAll('a:not(.no_stick_)');
+  const linkElem = document.querySelectorAll('a:not(.no_stick_), button, input, #clickHere');
   for (let i = 0; i < linkElem.length; i++) {
     linkElem[i].addEventListener('mouseover', function (e) {
       hovFlag = true;

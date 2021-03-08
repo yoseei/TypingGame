@@ -1,4 +1,4 @@
-html, body, a, input, button, alert {
+html, body, a, input, button {
   cursor: none;
 }
 
@@ -93,7 +93,7 @@ body #stalker.hov_ {
   width: 64px;
   height: 64px;
   transition: 0.5s;
-  background: rgba(242, 138, 10, 0.79);
+  background: rgba(252, 252, 18, 0.7);
 }
 body #cursor {
   transform: translate(0, 0);
@@ -103,7 +103,7 @@ body #cursor {
   left: -4px;
   width: 8px;
   height: 8px;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(16, 235, 231, 0.8);
   border-radius: 50%;
   z-index: 999;
   transition: width .3s, height .3s, top .3s, left .3s;
