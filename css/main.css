@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 h1 {
   margin: 0;
 }
@@ -94,58 +92,30 @@ body #stalker.hov_ {
   background: rgba(242, 138, 10, 0.79);
 }
 
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: "FontAwesome", sans-serif;
-}
-
-.login-body,
-.new-body {
+.login-body {
   display: flex;
   flex-direction: column;
   background: #e9e9e9;
   color: #5e5e5e;
   font: 400 87.5%/1.5em "Open Sans", sans-serif;
 }
-.login-body .login-wrapper,
-.login-body .new-wrapper,
-.new-body .login-wrapper,
-.new-body .new-wrapper {
+.login-body .login-wrapper {
   flex: 1;
 }
-.login-body .login-wrapper .form-wrapper,
-.login-body .new-wrapper .form-wrapper,
-.new-body .login-wrapper .form-wrapper,
-.new-body .new-wrapper .form-wrapper {
+.login-body .login-wrapper .form-wrapper {
   background: #fafafa;
   margin: 3em auto;
   padding: 0 2em;
   max-width: 370px;
 }
-.login-body .login-wrapper .form-wrapper h1,
-.login-body .new-wrapper .form-wrapper h1,
-.new-body .login-wrapper .form-wrapper h1,
-.new-body .new-wrapper .form-wrapper h1 {
+.login-body .login-wrapper .form-wrapper #formContainer {
+  padding-bottom: 20px;
+}
+.login-body .login-wrapper .form-wrapper h1 {
   text-align: center;
   padding: 1em 0;
 }
-.login-body .login-wrapper .form-wrapper form,
-.login-body .new-wrapper .form-wrapper form,
-.new-body .login-wrapper .form-wrapper form,
-.new-body .new-wrapper .form-wrapper form {
-  padding: 0 1.5em;
-}
-.login-body .login-wrapper .form-wrapper form .form-item,
-.login-body .new-wrapper .form-wrapper form .form-item,
-.new-body .login-wrapper .form-wrapper form .form-item,
-.new-body .new-wrapper .form-wrapper form .form-item {
-  margin-bottom: 0.75em;
-  width: 100%;
-}
-.login-body .login-wrapper .form-wrapper form .form-item input,
-.login-body .new-wrapper .form-wrapper form .form-item input,
-.new-body .login-wrapper .form-wrapper form .form-item input,
-.new-body .new-wrapper .form-wrapper form .form-item input {
+.login-body .login-wrapper .form-wrapper input {
   background: #fafafa;
   border: none;
   border-bottom: 2px solid #e9e9e9;
@@ -156,25 +126,20 @@ body #stalker.hov_ {
   transition: border-color 0.3s;
   width: 100%;
 }
-.login-body .login-wrapper .form-wrapper form .form-item input:focus,
-.login-body .new-wrapper .form-wrapper form .form-item input:focus,
-.new-body .login-wrapper .form-wrapper form .form-item input:focus,
-.new-body .new-wrapper .form-wrapper form .form-item input:focus {
+.login-body .login-wrapper .form-wrapper input:focus {
   border-bottom: 2px solid #c0c0c0;
   outline: none;
 }
-.login-body .login-wrapper .form-wrapper form .button-panel,
-.login-body .new-wrapper .form-wrapper form .button-panel,
-.new-body .login-wrapper .form-wrapper form .button-panel,
-.new-body .new-wrapper .form-wrapper form .button-panel {
-  margin: 2em 0 0;
-  width: 100%;
+.login-body .login-wrapper .button1-2 {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.login-body .login-wrapper .form-wrapper form .button-panel .button,
-.login-body .new-wrapper .form-wrapper form .button-panel .button,
-.new-body .login-wrapper .form-wrapper form .button-panel .button,
-.new-body .new-wrapper .form-wrapper form .button-panel .button {
-  background: #f16272;
+.login-body .login-wrapper .button1,
+.login-body .login-wrapper .button2,
+.login-body .login-wrapper .button3 {
+  border-radius: 5px;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -184,35 +149,41 @@ body #stalker.hov_ {
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
-  transition: background 0.3s ease-in-out;
   width: 100%;
 }
-.login-body .login-wrapper .form-wrapper form .button-panel .button:hover,
-.login-body .new-wrapper .form-wrapper form .button-panel .button:hover,
-.new-body .login-wrapper .form-wrapper form .button-panel .button:hover,
-.new-body .new-wrapper .form-wrapper form .button-panel .button:hover {
-  background: #ee3e52;
+.login-body .login-wrapper .button1 {
+  background: #DB3E64;
+  transition: opacity .3s ease-in-out;
 }
-.login-body .login-wrapper .form-wrapper .form-footer,
-.login-body .new-wrapper .form-wrapper .form-footer,
-.new-body .login-wrapper .form-wrapper .form-footer,
-.new-body .new-wrapper .form-wrapper .form-footer {
+.login-body .login-wrapper .button1:hover {
+  opacity: .7;
+}
+.login-body .login-wrapper .button2 {
+  background: #DBD353;
+  transition: opacity .3s ease-in-out;
+}
+.login-body .login-wrapper .button2:hover {
+  opacity: .7;
+}
+.login-body .login-wrapper .button3 {
+  background: #27AEDB;
+  transition: opacity .3s ease-in-out;
+}
+.login-body .login-wrapper .button3:hover {
+  opacity: .7;
+}
+
+.form-footer {
   font-size: 1em;
   padding: 2em 0;
   text-align: center;
 }
-.login-body .login-wrapper .form-wrapper .form-footer .form-footer a,
-.login-body .new-wrapper .form-wrapper .form-footer .form-footer a,
-.new-body .login-wrapper .form-wrapper .form-footer .form-footer a,
-.new-body .new-wrapper .form-wrapper .form-footer .form-footer a {
+.form-footer .form-footer a {
   color: #8c8c8c;
   text-decoration: none;
   transition: border-color 0.3s;
 }
-.login-body .login-wrapper .form-wrapper .form-footer .form-footer a:hover :hover,
-.login-body .new-wrapper .form-wrapper .form-footer .form-footer a:hover :hover,
-.new-body .login-wrapper .form-wrapper .form-footer .form-footer a:hover :hover,
-.new-body .new-wrapper .form-wrapper .form-footer .form-footer a:hover :hover {
+.form-footer .form-footer a:hover :hover {
   border-bottom: 1px dotted #8c8c8c;
 }
 
