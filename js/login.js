@@ -52,7 +52,7 @@ auth.onAuthStateChanged(function(user) {
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     const userId = document.getElementById('userId');
-    userId.textContent = "ID: " + user.email;
+    userId.textContent = "ID: " + user.uid.slice(0, 6); //UIDを５桁目まで表示
   } else {
     userId.textContent = "";
   }
