@@ -40,20 +40,15 @@ function signOut() {
   alert("ログアウトしました。"); 
 }
 
-// auth.onAuthStateChanged(function(user) {
-//   if(user) {
-//     var email = user.email;
-//     alert("ログインユーザー：" + email);
-//   } else {
-//     alert("ログイン、または新規登録をしてください。");
-//   }
-// });
-
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
+    const ranking = document.getElementById("ranking");
     const userId = document.getElementById('userId');
+
     userId.textContent = "ID: " + user.uid.slice(0, 6); //UIDを５桁目まで表示
   } else {
     userId.textContent = "ID: No User";
+    ranking.textContent = "";
   }
 });
+

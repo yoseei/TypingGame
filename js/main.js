@@ -68,9 +68,6 @@
   let startTime;
   let isPlaying = false;
   const target = document.getElementById('target');
-  const message = [
-    `まだまだですね！`
-  ]
   
   const clickHere = document.getElementById('clickHere');
   clickHere.addEventListener('click', () => {
@@ -84,9 +81,6 @@
 
   document.addEventListener('keydown', k => {
     if (k.key !== word[loc]) {
-      console.log("k::", k.key);
-      console.log("word::", word);
-
       return;
     }
     loc++;
