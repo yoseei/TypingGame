@@ -1,15 +1,3 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyDJPfLBIr-nLWG3PLHC7RC141WoGOuydu0",
-  authDomain: "typingdam-872b8.firebaseapp.com",
-  projectId: "typingdam-872b8",
-  storageBucket: "typingdam-872b8.appspot.com",
-  messagingSenderId: "1056827487439",
-  appId: "1:1056827487439:web:db77e4c4e79f2599ce73ba",
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-const auth = firebase.auth();
 
 function signUp() {
   var email = document.getElementById("email");
