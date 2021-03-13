@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ユーザー管理</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+  </head>
+  <body class="login-body">
+    <div id="header">
+      <h1><a href="index.html">TypingDam</a></h1>
+      <p id="userId">ID:</p>
+      <ul>
+        <li><a href="rank.html" id="ranking">ランキング</a></li>
+        <li><a href="login.html">ユーザー管理</a></li>
+      </ul>
+    </div>
+
+    <div class="login-wrapper">
+      <div class="form-wrapper">
+        <h1>ユーザー入力</h1>
+        <div id="formContainer">
+    
+          <input type="email" placeholder="メールアドレス" id="email" />
+          <input type="password" placeholder="パスワード" id="password" />
+          
+          <div class="button1-2">
+            <button class="button1" onClick="signUp()" id="signup">新規登録</button>
+            <button class="button2" onClick="signIn()" id="signIn">ログイン</button>
+          </div>
+
+          <button class="button3" onClick="signOut()" id="signOut">ログアウト</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">©2021 Y.K</div>
+    
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+
+  </body>
+</html>
